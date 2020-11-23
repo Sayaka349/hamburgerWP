@@ -1,0 +1,21 @@
+.p-front-top {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/front-top.jpg);
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    
+    &__title {
+        margin-left: 38px;
+        color: #ffffff;
+        font-family: $jp-fonts-b;
+        font-size: 2.5rem;
+    }
+}
+
+@include mq() {
+    .p-front-top {
+        max-height: 178px;
+    }
+}

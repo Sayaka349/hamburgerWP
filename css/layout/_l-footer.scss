@@ -1,0 +1,19 @@
+.l-footer {
+    background-image: url(../images/footer.jpg);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-family: $jp-fonts-l;
+        font-size: 1rem;
+        color: #ffffff;
+        text-align: center;
+
+        a {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+    }
+}

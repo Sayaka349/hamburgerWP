@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'mplus-1m-regular';
+	src: url(../fonts/mplus-1m-regular.ttf);
+	font-weight: normal;
+}
+
+@font-face { 
+	font-family: 'mplus-1m-bold';
+	src: url(../fonts/mplus-1m-bold.ttf);
+	font-weight: bold;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'mplus-1m-regular', 'mplus-1m-bold', 'Roboto', sans-serif;;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+:focus {
+	outline: none;
+}
+

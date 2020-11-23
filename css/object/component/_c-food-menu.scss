@@ -1,0 +1,30 @@
+.c-food-menu {
+    margin-left: 25px;
+
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        :hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__category {
+        font-size: 2rem;
+        
+        a {
+            font-family: $jp-fonts-b;
+            color: $sidebar-color;
+        }
+    }
+
+    &__item {
+        margin-left: 20px;
+        font-size: 1.5rem;
+
+        a {
+            font-family: $jp-fonts-l;
+        }
+    }
+}

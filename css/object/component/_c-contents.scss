@@ -1,0 +1,81 @@
+.c-contents {
+    display: flex;
+    background-color: $content-bg;
+
+    &-archive{
+        padding: 37px 61px;
+        @include mq() {
+            padding: 30px;
+        }
+
+
+        >h3 {
+            font-family: $jp-fonts-b;
+            font-size: 2rem;
+            color: $major-fc;
+            @include mq(sm) {
+                font-size: 1.5rem;
+            }
+        }
+
+        >p {
+            font-family: $jp-fonts-l;
+            font-size: 1.5rem;
+            color: $major-fc;
+            margin: 20px 0;
+            @include mq(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &-single{
+        padding: 37px 61px;
+        @include mq() {
+            padding: 30px;
+        }
+
+        &__titlebiggest {
+            font-family: $jp-fonts-b;
+            font-size: 2rem;
+            color: $major-fc;
+        }
+
+        &__titlebigger {
+            font-family: $jp-fonts-b;
+            font-size: 1.7rem;
+            color: $major-fc;
+            @include mq(sm) {
+                font-size: 1.6rem;
+            }
+        }
+
+        &__titlesimple {
+            font-family: $jp-fonts-b;
+            font-size: 1.5rem;
+            color: $major-fc;
+            margin: 30px 0;
+
+        }
+
+        >p {
+            font-family: $jp-fonts-l;
+            font-size: 1.5rem;
+            color: $major-fc;
+            margin: 30px 0;
+            @include mq(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+main {
+    flex: 1;
+}
+
+aside {
+    width: 240px;
+}
+

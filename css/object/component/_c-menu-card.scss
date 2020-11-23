@@ -1,0 +1,78 @@
+.c-menu-card {
+    display: flex;
+    margin: 30px 0;
+    height: 320px;
+    @include mq(sm) {
+        flex-direction: column;
+        height: 500px;
+    }
+
+    &__picture {
+        flex: 1;
+        background-image: url(../images/archive-menu.jpg);
+        background-size: cover;
+        background-position: center;
+        }
+
+
+    &__about {
+        flex: 1;
+        background-color: $menu-card-bg;
+        padding: 5%;
+        color: #ffffff;
+        @include mq(sm) {
+            padding-right: 15%;
+        }
+
+        h2 {
+            font-family: $jp-fonts-b;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            @include mq(sm) {
+                margin-top: 10px;
+            }
+
+        }
+
+        h3 {
+            font-family: $jp-fonts-b;
+            font-size: 1.7rem;
+            @include mq(sm) {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            font-family: $jp-fonts-l;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            @include mq(sm) {
+                font-size: 1rem;
+                margin: 15px 0;
+            }
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 30px auto;
+        background-color: #ffffff;
+        width: 210px;
+        padding: 20px;
+        border-radius: 100vh;
+        @include mq() {   
+            width: 150px;
+            padding: 15px;
+        }
+        @include mq(sm) {
+            margin: 20px auto 10px auto;
+        }
+
+        a {
+            font-family: $jp-fonts-b;
+            color: $header-color;
+            font-size: 1.3rem;
+        }
+    }
+}
+

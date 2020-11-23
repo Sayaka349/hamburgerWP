@@ -1,0 +1,39 @@
+.p-archive-bg {
+    background-image: url(../images/archive-top.jpg);
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.p-archive-top {
+    display: flex;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    height: 170px;
+    
+    &__title {
+        margin-left: 38px;
+        color: #ffffff;
+        font-family: $en-fonts, bold;
+        font-size: 4rem;
+    }
+
+    &__menu {
+        font-family: $jp-fonts-b;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+}
+
+@include mq(sm) {
+    .p-archive-bg {
+        background-size: auto;
+    }
+
+    .p-archive-top__title {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5rem;
+    } 
+}

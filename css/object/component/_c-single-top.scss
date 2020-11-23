@@ -1,0 +1,36 @@
+.c-single-top {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/single-top.jpg);
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+
+    @include mq() {
+        background-size: 130% auto;
+        font-size: 3rem;
+    }   
+
+    @include mq(sm) {
+        max-height: 178px;
+    }
+    
+    &__title {
+        margin-left: 38px;
+        color: #ffffff;
+        font-family: $jp-fonts-b;
+        font-size: 4rem;
+
+        @include mq() {
+            font-size: 3rem;
+        }   
+
+        @include mq(sm) {
+            font-size: 2.5rem;
+        }   
+    }
+
+    &.aboutshop {
+        background-image: url(../images/page-fix-top.jpg);
+    }
+}

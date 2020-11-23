@@ -1,0 +1,24 @@
+.c-quote-bg {
+    background-color: $quote-bg;
+    padding: 30px;
+
+    >p {
+        font-family: $jp-fonts-l;
+        font-size: 1.5rem;
+        color: $major-fc;
+        margin-top: 30px;
+        @include mq(sm) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.c-quote-txt {
+    font-family: $jp-fonts-l;
+    font-size: 1.5rem;
+    color: $major-fc;
+    @include mq(sm) {
+        font-size: 1rem;
+    }
+
+}

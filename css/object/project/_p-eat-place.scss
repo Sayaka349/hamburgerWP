@@ -1,0 +1,66 @@
+.p-eat-place {
+    display: flex;
+    padding: 60px 40px;
+
+    &__select {
+        width: 45%;
+        height: 740px;
+        margin: 0 auto;
+        position: relative;
+
+        &-takeout {
+            background-image: url(../images/archive-top.jpg);
+            background-position: center;
+        }
+        &-eatin {
+            background-image: url(../images/eat-in.jpg);
+            background-position: center;
+        }
+    }
+
+    hr {
+        margin: 4%;
+        height: 5px;
+        width: 45px;
+        background-color: #ffffff;
+        border: none;
+    }
+
+    &__txt {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+@include mq() {
+    .p-eat-place {
+        padding: 40px 20px;
+
+        &__select{
+            height: 430px;
+        }
+    }
+}
+
+
+@include mq(sm) {
+    .p-eat-place {
+        flex-direction: column;
+        padding: 30px 10px;
+
+        &__select{
+            width: 90%;
+
+            &-takeout {
+                margin-bottom: 30px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+
+    }
+}

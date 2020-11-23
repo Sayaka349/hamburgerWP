@@ -1,0 +1,64 @@
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 135px;
+    padding: 0 21px 0 38px;
+    background-color: $header-bg;
+    position: relative;
+
+    &__title {
+        color : inherit;
+    }
+
+    h1 {
+        font-family: $en-fonts, bold;
+        font-size: 4rem;
+        color: $header-color;
+    }
+    
+    &__menu-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px 15px;
+        font-family: $en-fonts;
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: $header-color;
+        display: none;
+    }
+
+}
+
+@include mq() {
+    .l-header {
+        padding: 0 21px;
+        flex-direction: column;
+        justify-content: center; 
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 22px;
+        }
+
+        &__menu-icon {
+            display: block;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .l-header__menu-icon.show {
+        display: none;
+    }
+
+}
+
+@include mq(sm) {
+    .l-header__menu-icon {
+        font-size: 2rem;
+    }
+}
+

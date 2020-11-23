@@ -1,0 +1,48 @@
+.c-eat-place__title {
+    font-family: $en-fonts;
+    font-size: 5rem;
+    margin: 4%;
+        :hover {
+            opacity: 0.8;
+        }
+
+    a {
+        color: #ffffff;
+    }
+}
+
+.c-eat-place__txtsub {
+    background: rgba($color: #ffffff, $alpha: 0.8) ;
+    padding: 4%;
+    margin: 4%;
+
+    h3 {
+        font-family: $jp-fonts-b;
+        font-size: 2rem;
+        color: $major-fc;
+        margin-bottom: 4%;
+    }
+
+    p {
+        font-family: $jp-fonts-l;
+        color: $major-fc;
+        font-size: 1.5rem;
+    }
+}
+
+
+@include mq() {
+    .c-eat-place__title {
+        font-size: 3rem;
+    }
+
+    .c-eat-place__txtsub {
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        P {
+            font-size: 1rem;
+        }
+    }
+}
