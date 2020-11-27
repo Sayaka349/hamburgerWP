@@ -1,6 +1,6 @@
 <footer class="l-footer">
         <div>
-            <p><a href="page.html">ショップ情報</a>
+            <p><a href="#">ショップ情報</a>
             ｜
             <a href="#">ヒストリー</a></p>
             <p>Copyright: RaiseTech</p>

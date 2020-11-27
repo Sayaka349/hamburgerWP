@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <title>Hamburger</title>
-</head>
-<body>
-    <div class="c-contents">
-
-        <main>
-            <header class="l-header">
-                <h1><a href="index.html" class="l-header__title">Hamburger</a></h1>
-                <form action="#" method="get" class="p-search-form">
-                    <input type="search" class="c-search-form__input">
-                    <span class="fas fa-search"></span>
-                    <input type="submit" class="c-search-form__buttom" value="検索">
-                </form>
-                <span class="l-header__menu-icon">Menu</span>
-            </header>
+<?php get_header(); ?>  <!-- header.phpを読み込む -->
             
             <div class="c-single-top">
                     <h1 class="c-single-top__title">h1 チーズバーガー</h1>
@@ -157,58 +135,8 @@
 
         <div class="c-filter"></div>
 
-        <aside class="l-sidebar">
-            <h2 class="l-sidebar__menu"><a href="archive.html" class="l-header__title">Menu</a></h2>
-            <span class="l-sidebar__menu-icon"></span>
+        <?php get_sidebar(); ?> <!--siderbar.phpを読み込む-->
 
-            <ul class="c-food-menu">
-                <li class ="c-food-menu__category"><a href="#">バーガー</a>
-                    <ul>
-                        <li class="c-food-menu__item"><a href="#">ハンバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">チーズバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">テリヤキバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">アボカドバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">フィッシュバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">ベーコンバーガー</a></li>
-                        <li class="c-food-menu__item"><a href="#">チキンバーガー</a></li>
-                    </ul>
-                </li>
-                <li class ="c-food-menu__category"><a href="#">サイド</a>
-                    <ul>
-                        <li class="c-food-menu__item"><a href="#">ポテト</a></li>
-                        <li class="c-food-menu__item"><a href="#">サラダ</a></li>
-                        <li class="c-food-menu__item"><a href="#">ナゲット</a></li>
-                        <li class="c-food-menu__item"><a href="#">コーン</a></li>
-                    </ul>
-                </li>
-                <li class ="c-food-menu__category"><a href="#">ドリンク</a>
-                    <ul>
-                        <li class="c-food-menu__item"><a href="#">コーラ</a></li>
-                        <li class="c-food-menu__item"><a href="#">ファンタ</a></li>
-                        <li class="c-food-menu__item"><a href="#">オレンジ</a></li>
-                        <li class="c-food-menu__item"><a href="#">アップル</a></li>
-                        <li class="c-food-menu__item"><a href="#">紅茶(Ice/Hot)</a></li>
-                        <li class="c-food-menu__item"><a href="#">コーヒー(Ice/Hot)</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
     </div>
 
-    <footer class="l-footer">
-        <div>
-            <p><a href="page.html">ショップ情報</a>
-            ｜
-            <a href="#">ヒストリー</a></p>
-            <p>Copyright: RaiseTech</p>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
-    <script src="./js/hamburger.js"></script>
-
-  
-</body>
-</html>
+<?php get_footer(); ?> <!-- footer.phpを読み込む -->
