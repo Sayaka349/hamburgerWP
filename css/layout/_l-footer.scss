@@ -3,13 +3,37 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+
+    &__container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     p {
         font-family: $jp-fonts-l;
         font-size: 1rem;
         color: #ffffff;
         text-align: center;
+
+    }
+
+    &__menu {
+        font-family: $jp-fonts-l;
+        font-size: 1rem;
+        color: #ffffff;
+        text-align: center;
+
+        li:first-child {
+            padding-right: 5px;
+            border-right: 1px solid #ffffff;
+        }
+
+        li:last-child {
+            padding-left: 5px;
+        }
+
 
         a {
             font-size: 1.2rem;

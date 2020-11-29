@@ -1,4 +1,4 @@
-.c-pagenavi {
+.page {
     font-weight: bold;
     color: $header-color;
     background-color: #ffffff;
@@ -8,9 +8,9 @@
     @include mq(sm) {
         display: none;
     }
+}
 
-    &.current {
-        color: #ffffff;
-        background-color: $menu-card-bg;
-    }
+.current {
+    color: #ffffff;
+    background-color: $menu-card-bg;
 }

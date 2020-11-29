@@ -18,13 +18,13 @@
             color: $sidebar-color;
         }
     }
+}
 
-    &__item {
-        margin-left: 20px;
-        font-size: 1.5rem;
+.sub-menu {
+    margin-left: 20px;
+    font-size: 1.5rem;
 
-        a {
-            font-family: $jp-fonts-l;
-        }
+    a {
+        font-family: $jp-fonts-l;
     }
 }

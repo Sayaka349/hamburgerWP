@@ -47,20 +47,7 @@
                     </section>
                 </div>
 
-                <div class="p-pagenavi">
-                    <span class="p-pagenavi__pages">page 1/10</span>
-                    <a class="p-pagenavi__postslink" rel="prev" href="#">≪<span class="p-pagenavi__pre">前へ</span></a>
-                    <a class="c-pagenavi current" title="Page 1" href="#">1</a>
-                    <a class="c-pagenavi larger" title="Page 2" href="#">2</a>
-                    <a class="c-pagenavi larger" title="Page 3" href="#">3</a>
-                    <a class="c-pagenavi larger" title="Page 4" href="#">4</a>
-                    <a class="c-pagenavi larger" title="Page 5" href="#">5</a>
-                    <a class="c-pagenavi larger" title="Page 6" href="#">6</a>
-                    <a class="c-pagenavi larger" title="Page 7" href="#">7</a>
-                    <a class="c-pagenavi larger" title="Page 8" href="#">8</a>
-                    <a class="c-pagenavi larger" title="Page 9" href="#">9</a>
-                    <a class="p-pagenavi__postslink" rel="next" href="#"><span class="p-pagenavi__pre">次へ</span>≫</a>
-                </div>
+                <?php wp_pagenavi(); ?>
 
             </div>
 

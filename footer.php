@@ -1,8 +1,10 @@
 <footer class="l-footer">
-        <div>
-            <p><a href="#">ショップ情報</a>
-            ｜
-            <a href="#">ヒストリー</a></p>
+        <div> <!--footermenuの表示(コンテナとulにクラスを付与)-->
+            <?php wp_nav_menu( array(
+                'menu' => 'footermenu',
+                'container_class' => 'l-footer__container',
+                'menu_class' => 'l-footer__menu',
+                )); ?>
             <p>Copyright: RaiseTech</p>
         </div>
     </footer>

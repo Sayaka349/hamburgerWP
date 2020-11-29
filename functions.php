@@ -7,8 +7,12 @@ function hamburger_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' ); 
 	
-	// link,style,scriptのHTML5対応を有効化
-	add_theme_support( 'html5', array( 'style','script' ) ); 
+	//HTML5対応を有効化
+	add_theme_support( 'html5', array( 'search-form','comment-form','comment-list','gallery','caption', ) ); 
+
+	register_nav_menus( array(
+	'footer_nav' => esc_html__( 'footer navigation', 'style' ),
+	'category_nav' => esc_html__( 'category navigation', 'style' ), ) );
 
 }
 add_action( 'after_setup_theme', 'hamburger_setup' );
