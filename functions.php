@@ -46,3 +46,20 @@ function hamburger_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
+
+
+function change_posts_per_page($query) {
+    if ( is_admin() || ! $query->is_main_query() )
+        return;
+ 
+    /* アーカイブページの時に表示件数を3件にセット */
+    if ( $query->is_archive() ) {
+		$query->set( 'posts_per_page', '3' );
+    }
+    /* 検索ページの時に表示件数を5件にセット */
+    if ( $query->is_search() ) {
+		$query->set( 'posts_per_page', '5' );
+    }
+}
+add_action( 'pre_get_posts', 'change_posts_per_page' );
+

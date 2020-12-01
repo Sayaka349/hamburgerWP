@@ -1,43 +1,3 @@
-// .p-pagenavi {
-//     margin-top: 60px;
-//     text-align: center;
-//     @include mq(sm) {
-//         display: flex;
-//         justify-content: space-between;
-//     }
-
-//     &__pages {
-//         font-family: $en-fonts;
-//         color: $header-color;
-//         font-weight: bold;
-//         font-size: 1rem;
-//         margin-right: 2px;
-//         @include mq(sm) {
-//             display: none;
-//         }
-    
-//     }
-
-//     &__postslink {
-//         font-family: $en-fonts;
-//         color: $header-color;
-//         font-size: 1.5rem;
-//         @include mq(sm) {
-//             display: flex;
-//         }
-//     }
-
-//     &__pre {
-//         display: none;
-//         @include mq(sm) {
-//             display: block;
-//             font-family: $jp-fonts-l;
-//         }
-//     }
-// }
-
-// 変更
-
 .wp-pagenavi {
     margin-top: 60px;
     text-align: center;
@@ -47,33 +7,49 @@
     }
 }
 
+.wp-pagenavi a, .wp-pagenavi span {
+    padding: 6px 10px;
+}
+
+.wp-pagenavi span {
+    border: none;
+}
+
 .pages {
     font-family: $en-fonts;
     color: $header-color;
     font-weight: bold;
-    font-size: 1rem;
-    margin-right: 2px;
+    font-size: 1.2rem;
+    margin-right: 4px;
+    @include mq(sm) {
+        display: none;
+    }
+} 
+
+.previouspostslink, .nextpostslink {
+        font-family: $en-fonts;
+        color: $header-color;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border: none;
+    }
+
+
+.page {
+    color: $header-color;
+    background-color: #ffffff;
+    font-family: $en-fonts;
+    font-weight: bold;
+    font-size: 1.2rem;
     @include mq(sm) {
         display: none;
     }
 }
-    
 
-//     &__postslink {
-//         font-family: $en-fonts;
-//         color: $header-color;
-//         font-size: 1.5rem;
-//         @include mq(sm) {
-//             display: flex;
-//         }
-//     }
-
-//     &__pre {
-//         display: none;
-//         @include mq(sm) {
-//             display: block;
-//             font-family: $jp-fonts-l;
-//         }
-//     }
-// }
+.current {
+    color: #ffffff;
+    background-color: $menu-card-bg;
+    font-family: $en-fonts;
+    font-size: 1.2rem;
+}
 

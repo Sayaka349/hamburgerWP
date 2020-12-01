@@ -21,10 +21,11 @@
 
     &__menu {
         font-family: $jp-fonts-b;
-        font-size: 1.5rem;
+        font-size: 2rem;
         vertical-align: middle;
     }
 }
+
 
 @include mq(sm) {
     .p-archive-bg {

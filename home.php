@@ -6,7 +6,7 @@
 
             <section class="p-eat-place">
                     <section class="p-eat-place__select p-eat-place__select-takeout">
-                        <h2 class="c-eat-place__title" ><a href="#">Take Out</a></h2>
+                        <h2 class="c-eat-place__title" ><a href="<?php echo get_category_link( '' ); ?>">Take Out</a></h2>
                         <hr>
                         <div class="p-eat-place__txt">
                             <article class="c-eat-place__txtsub">
