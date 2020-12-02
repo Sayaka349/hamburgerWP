@@ -1,7 +1,7 @@
 <?php get_header(); ?>  <!-- header.phpを読み込む -->
             
             <div class="c-single-top aboutshop">
-                    <h1 class="c-single-top__title aboutshop">ショップについて</h1>
+                    <h1 class="c-single-top__title aboutshop"><?php the_title(); ?></h1>
             </div>
 
             <div class="c-contents-single">

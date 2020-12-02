@@ -2,7 +2,13 @@
             
             <div class="p-archive-bg">
                 <div class="p-archive-top">
-                        <h2 class="p-archive-top__title">Menu:<span class="p-archive-top__menu">チーズバーガー</span></h2>
+                        <h2 class="p-archive-top__title">Menu:
+                            <span class="p-archive-top__menu">
+                                <?php $category = get_the_category(); 
+                                    echo $category[2]->cat_name;
+                                ?> <!--3番目のカテゴリー名のみリンクなしで表示-->
+                            </span>
+                        </h2>
                 </div>
             </div>
 

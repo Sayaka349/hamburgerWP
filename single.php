@@ -1,7 +1,7 @@
 <?php get_header(); ?>  <!-- header.phpを読み込む -->
             
             <div class="c-single-top">
-                    <h1 class="c-single-top__title">h1 チーズバーガー</h1>
+                    <h1 class="c-single-top__title">h1 <?php the_title(); ?></h1>
             </div>
 
             <div class="c-contents-single">
@@ -22,43 +22,43 @@
                     <p>出典元：<a href="#">〇〇〇〇〇〇〇〇〇〇〇〇〇</a></p>
                 </div>
 
-                <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeA">
+                <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeA">
                 <div class="c-single-main__section pic-left">
-                    <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeB">
+                    <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeB">
                     <p class="c-single-main__txt left">テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                 </div>
                 <div class="c-single-main__section pic-right">
-                    <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeB">
+                    <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeB">
                     <p class="c-single-main__txt right">テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                 </div>
-                <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeC">
+                <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeC">
                 <div class="c-single-main__grid">
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                     <div class="c-single-main__grid-item">
-                        <img src="./images/cooked-foods-750073@2x.jpg" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
+                        <img src="<?php echo get_theme_file_uri('/images/cooked-foods-750073@2x.jpg'); ?>" alt="ハンバーガーセット画像" class="c-single-main__pic typeD">
                     </div>
                 </div>
 
