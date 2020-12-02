@@ -9,6 +9,7 @@
 
 .wp-pagenavi a, .wp-pagenavi span {
     padding: 6px 10px;
+    font-weight: bold;
 }
 
 .wp-pagenavi span {
@@ -39,7 +40,6 @@
     color: $header-color;
     background-color: #ffffff;
     font-family: $en-fonts;
-    font-weight: bold;
     font-size: 1.2rem;
     @include mq(sm) {
         display: none;

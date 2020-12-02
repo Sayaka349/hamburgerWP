@@ -52,14 +52,30 @@ function change_posts_per_page($query) {
     if ( is_admin() || ! $query->is_main_query() )
         return;
  
-    /* アーカイブページの時に表示件数を3件にセット */
+    //アーカイブページの時に表示件数を3件にセット
     if ( $query->is_archive() ) {
 		$query->set( 'posts_per_page', '3' );
     }
-    /* 検索ページの時に表示件数を5件にセット */
+    //検索ページの時に表示件数を5件にセット
     if ( $query->is_search() ) {
 		$query->set( 'posts_per_page', '5' );
-    }
+	}
+
+    //カテゴリーページの時に表示件数を5件にセット
+	if ( $query->is_category() ) {
+		$query->set( 'posts_per_page', '5' );
+	}
+	
+	//カテゴリーEatIn
+	if ( $query->is_category_2() ) {
+		$query->set( 'cat', '2' );
+	  }
+
+	//カテゴリーTakeOut
+	if ( $query->is_category_3() ) {
+		$query->set( 'cat', '3' );
+	}
+
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
 

@@ -2,7 +2,7 @@
             
             <div class="p-archive-bg">
                 <div class="p-archive-top">
-                        <h2 class="p-archive-top__title">Menu:<span class="p-archive-top__menu">チーズバーガー</span></h2>
+                        <h2 class="p-archive-top__title">Menu:<span class="p-archive-top__menu">Take Out</span></h2>
                 </div>
             </div>
 
