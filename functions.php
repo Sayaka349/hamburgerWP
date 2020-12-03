@@ -47,6 +47,13 @@ function hamburger_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
 
+function hamburger_theme_add_editor_styles() {
+
+	// エディタ用cssを読み込み
+    add_editor_style( get_template_directory_uri() . "editor-style.css" );
+}
+add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
+
 
 function change_posts_per_page($query) {
     if ( is_admin() || ! $query->is_main_query() )
