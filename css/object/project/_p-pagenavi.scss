@@ -9,7 +9,12 @@
 
 .wp-pagenavi a, .wp-pagenavi span {
     padding: 6px 10px;
+    margin: 0 4px;
     font-weight: bold;
+}
+
+.previouspostslink, .nextpostslink{
+    border: none !important;
 }
 
 .wp-pagenavi span {
