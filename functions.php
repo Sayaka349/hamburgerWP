@@ -10,9 +10,14 @@ function hamburger_setup() {
 	//HTML5対応を有効化
 	add_theme_support( 'html5', array( 'search-form','comment-form','comment-list','gallery','caption', ) ); 
 
+	// ナビゲーションメニュー
 	register_nav_menus( array(
 	'footer_nav' => esc_html__( 'footer navigation', 'style' ),
 	'category_nav' => esc_html__( 'category navigation', 'style' ), ) );
+
+	// editor-style.cssを読み込み
+	add_editor_style("editor-style.css");
+	add_theme_support("editor-styles");
 
 }
 add_action( 'after_setup_theme', 'hamburger_setup' );
@@ -47,13 +52,6 @@ function hamburger_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
 
-function hamburger_theme_add_editor_styles() {
-
-	// エディタ用cssを読み込み
-    add_editor_style( get_template_directory_uri() . "editor-style.css" );
-}
-add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
-
 
 function change_posts_per_page($query) {
     if ( is_admin() || ! $query->is_main_query() )
@@ -85,4 +83,3 @@ function change_posts_per_page($query) {
 
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
-

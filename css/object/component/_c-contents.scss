@@ -35,13 +35,13 @@
             padding: 30px;
         }
 
-        &__titlebiggest {
+        >h2 {
             font-family: $jp-fonts-b;
             font-size: 2rem;
             color: $major-fc;
         }
 
-        &__titlebigger {
+        >h3, h4, h5, h6 {
             font-family: $jp-fonts-b;
             font-size: 1.7rem;
             color: $major-fc;
@@ -50,7 +50,7 @@
             }
         }
 
-        &__titlesimple {
+        >h4, h5, h6 {
             font-family: $jp-fonts-b;
             font-size: 1.5rem;
             color: $major-fc;
