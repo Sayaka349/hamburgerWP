@@ -3,7 +3,7 @@
     <div class="c-contents__error">
         <h2 class="c-contents__error-title">Error 404 <br> Not Found</h2>
         <p class="c-contents__error-message">お探しのページは見つかりませんでした。</p>
-        <p class="c-contents__error-message"><a href="<?php echo home_url(); ?>">HOMEへ</a></p>
+        <p class="c-contents__error-message"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">HOMEへ</a></p>
     </div>
 
         </main>
