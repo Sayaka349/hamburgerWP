@@ -4,9 +4,13 @@
                 <div class="p-archive-top">
                         <h2 class="p-archive-top__title">Menu:
                             <span class="p-archive-top__menu">
-                                <?php $category = get_the_category(); 
-                                    echo $category[2]->cat_name;
-                                ?> <!--3番目のカテゴリー名のみリンクなしで表示-->
+                                <?php
+                                    $categories = get_the_category();
+                                    foreach ( $categories as $category ) {
+                                    $slugName = $category->category_nicename;
+                                    }
+                                    echo esc_html( $slugName );
+                                ?><!--スラッグ名を表示-->                                
                             </span>
                         </h2>
                 </div>
@@ -17,7 +21,7 @@
                 <h3>小見出しが入ります</h3>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
-                <?php get_template_part( 'loop' ); ?>
+                <?php esc_html( get_template_part( 'loop' ) ); ?>
 
                 <?php wp_pagenavi(); ?>
 
