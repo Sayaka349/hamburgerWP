@@ -2,7 +2,7 @@
             
             <div class="p-archive-bg">
                 <div class="p-archive-top">
-                        <h2 class="p-archive-top__title">Search:<span class="p-archive-top__menu"><?php echo get_search_query(); ?></span></h2>
+                        <h2 class="p-archive-top__title">Search:<span class="p-archive-top__menu"><?php echo esc_attr( get_search_query() ); ?></span></h2>
                 </div>
             </div>
 
@@ -11,7 +11,7 @@
                 <h3>小見出しが入ります</h3>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
-                <?php get_template_part( 'loop' ); ?>
+                <?php esc_html( get_template_part( 'loop' ) ); ?>
 
                 <?php wp_pagenavi(); ?>
 
