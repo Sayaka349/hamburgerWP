@@ -15,7 +15,7 @@
                     <div>
                         <h2 class="c-menu-card__about-title"><?php the_title(); ?></h2> <!--タイトル表示-->
                         <article>
-                            <p><?php echo wp_trim_words( get_the_content(), 100, '...' ); ?></p> <!--本文を100字以内で表示-->
+                            <p><?php the_excerpt(); ?></p> 
                         </article>
                     </div>
                     <button class="c-menu-card__button"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>

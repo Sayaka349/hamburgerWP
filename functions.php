@@ -50,7 +50,7 @@ function hamburger_scripts() {
     wp_enqueue_style('hamburger-style', get_template_directory_uri() .'/css/style.css', array(), filemtime( get_theme_file_path( 'style.css' )) );
 
 	//jqueryを読み込み
-	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/hamburger.js', array( 'jquery' ), true );
+	wp_enqueue_script( 'script-name', get_template_directory_uri() .'/js/hamburger.js', array( 'jquery' ), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
@@ -77,7 +77,7 @@ function change_posts_per_page($query) {
 	//カテゴリーEatIn
 	if ( $query->is_category_2() ) {
 		$query->set( 'cat', '2' );
-	  }
+	}
 
 	//カテゴリーTakeOut
 	if ( $query->is_category_3() ) {
