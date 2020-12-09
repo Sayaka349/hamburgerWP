@@ -878,12 +878,6 @@ aside {
   color: #ffffff;
 }
 
-@media screen and (max-width: 600px) {
-  .c-menu-card__about {
-    padding-right: 15%;
-  }
-}
-
 .c-menu-card__about h2 {
   font-family: "mplus-1m-bold", sans-serif;
   font-size: 2rem;
@@ -913,10 +907,16 @@ aside {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 960px) {
+  .c-menu-card__about p {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .c-menu-card__about p {
     font-size: 1rem;
-    margin: 15px 0;
+    margin: 15px 0 20px 0;
   }
 }
 
@@ -1401,6 +1401,12 @@ aside {
   background-color: #3C2B1C;
   font-family: "Robot", sans-serif;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .page-template-default {
+    display: block !important;
+  }
 }
 
 .wp-block-code {

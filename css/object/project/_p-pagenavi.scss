@@ -58,3 +58,8 @@
     font-size: 1.2rem;
 }
 
+@include mq(sm) {
+    .page-template-default{
+        display: block!important;
+    }
+}

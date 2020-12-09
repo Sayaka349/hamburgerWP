@@ -27,9 +27,6 @@
         background-color: $menu-card-bg;
         padding: 5%;
         color: #ffffff;
-        @include mq(sm) {
-            padding-right: 15%;
-        }
 
         h2 {
             font-family: $jp-fonts-b;
@@ -53,9 +50,12 @@
             font-family: $jp-fonts-l;
             font-size: 1.5rem;
             margin: 10px 0;
+            @include mq() {
+                font-size: 1.2rem;
+            }
             @include mq(sm) {
                 font-size: 1rem;
-                margin: 15px 0;
+                margin: 15px 0 20px 0;
             }
         }
     }
