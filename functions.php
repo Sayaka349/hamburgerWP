@@ -3,7 +3,6 @@
 function hamburger_setup() {
 
 	//テーマサポート
-	add_theme_support( 'menus' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' ); 
 	
@@ -86,3 +85,14 @@ function change_posts_per_page($query) {
 
 }
 add_action( 'pre_get_posts', 'change_posts_per_page' );
+
+
+function twpp_change_excerpt_length( $length ) {
+	return 50; //抜粋の文字数を50にする
+	}
+add_filter( 'excerpt_length', 'twpp_change_excerpt_length', 999 );
+
+
+if ( ! isset( $content_width ) ) {
+	$content_width = 1519.2;
+}

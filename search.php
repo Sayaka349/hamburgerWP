@@ -2,7 +2,7 @@
             
             <div class="p-archive-bg">
                 <div class="p-archive-top">
-                        <h2 class="p-archive-top__title">Search:<span class="p-archive-top__menu"><?php echo esc_attr( get_search_query() ); ?></span></h2>
+                        <h2 class="p-archive-top__title">Search:<span class="p-archive-top__menu"><?php echo esc_html( get_search_query() ); ?></span></h2>
                 </div>
             </div>
 

@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body  <?php body_class(); ?>>
+<body  <?php body_class(); ?>><?php wp_body_open(); ?>
 
     <div class="c-contents">
 

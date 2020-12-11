@@ -352,6 +352,61 @@ img {
   outline: none;
 }
 
+.wp-caption {
+  font-size: 1.5rem;
+}
+
+.wp-caption-text {
+  margin-top: -20px;
+}
+
+.sticky {
+  padding: 20px;
+  background: #707070;
+}
+
+.gallery-caption {
+  font-size: 1.5rem;
+}
+
+.bypostauthor {
+  padding: 20px;
+  background: #707070;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
 .l-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -918,6 +973,10 @@ aside {
     font-size: 1rem;
     margin: 15px 0 20px 0;
   }
+}
+
+.c-menu-card__about p a {
+  color: #ffffff;
 }
 
 .c-menu-card__button {

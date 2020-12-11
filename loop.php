@@ -13,7 +13,8 @@
 
                 <section class="c-menu-card__about">
                     <div>
-                        <h2 class="c-menu-card__about-title"><?php the_title(); ?></h2> <!--タイトル表示-->
+                        <h2 class="c-menu-card__about-title"><?php the_title(); ?></h2><!--タイトル表示-->
+                        <p><?php the_tags( 'Tags: ' ); ?></p>
                         <article>
                             <p><?php the_excerpt(); ?></p> 
                         </article>
