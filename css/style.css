@@ -531,10 +531,13 @@ img {
 .l-footer__menu li:first-child {
   padding-right: 5px;
   border-right: 1px solid #ffffff;
+  margin-right: 5px;
 }
 
 .l-footer__menu li:last-child {
   padding-left: 5px;
+  border-left: 1px solid #ffffff;
+  margin-left: 5px;
 }
 
 .l-footer__menu a {
@@ -1516,5 +1519,32 @@ td {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 40px 0;
+}
+
+.wpcf7-form > p {
+  font-family: "mplus-1m-regular", sans-serif;
+  color: #3C2B1C;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .wpcf7-form > p {
+    font-size: 1rem;
+  }
+}
+
+.wpcf7-text, .wocf7-textarea, .wpcf7-form-control {
+  width: 100%;
+  padding: 10px;
+  border: solid 1px #bbbbbb;
+  background-color: #ffffff;
+}
+
+.wpcf7-submit {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  background-color: #F2EDE9;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

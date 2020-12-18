@@ -3,3 +3,27 @@
     font-weight: bold;
     margin: 40px 0;
 }
+
+.wpcf7-form > p {
+    font-family: $jp-fonts-l;
+    color: $major-fc;
+    font-size: 1.5rem;
+    @include mq(sm) {
+        font-size: 1rem;
+    }
+}
+
+.wpcf7-text, .wocf7-textarea, .wpcf7-form-control {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #bbbbbb;
+    background-color: #ffffff;
+}
+
+.wpcf7-submit {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    background-color:#F2EDE9;
+    margin-top: 10px;
+}
