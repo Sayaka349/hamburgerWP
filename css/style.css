@@ -560,13 +560,18 @@ img {
 
 @media screen and (max-width: 960px) {
   .l-sidebar {
-    display: none;
+    position: fixed;
+    right: -240px;
+    top: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .l-sidebar.show {
-    display: block;
-    position: absolute;
-    right: 0;
-    padding-bottom: 500px;
+    overflow-y: scroll;
+    height: 100%;
+    right: -17px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .l-sidebar__menu-icon.show {
     position: absolute;
